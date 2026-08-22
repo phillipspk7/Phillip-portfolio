@@ -1,58 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JZTV6VP5L1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-JZTV6VP5L1');
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phillips Sekyanzi | Viral Video Editor</title>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-JZTV6VP5L1');</script>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phillips Sekyanzi | Viral Video Editor Uganda</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
-    <style>body{font-family:'Outfit',sans-serif}</style>
+    <style>.modal{display:none}.modal.active{display:flex}body{font-family:system-ui}</style>
 </head>
 <body class="bg-black text-white">
     <nav class="flex justify-between items-center p-6 max-w-6xl mx-auto">
         <h1 class="text-2xl font-extrabold">PHILLIPS<span class="text-yellow-400">.PK7</span></h1>
-        <a href="https://wa.me/256791952799?text=Hi%20Phillips%20I%20need%20video%20edit" class="bg-yellow-400 text-black px-6 py-2 rounded-full font-bold">Hire Me</a>
+        <a href="https://wa.me/256791952799" class="bg-yellow-400 text-black px-6 py-2 rounded-full font-bold">Hire Me</a>
     </nav>
-    <section class="max-w-6xl mx-auto px-6 py-16 text-center">
+    <section class="max-w-6xl mx-auto px-6 py-12 text-center">
         <h2 class="text-5xl md:text-7xl font-extrabold">I Edit Videos<br><span class="text-yellow-400">That Go Viral</span></h2>
-        <p class="text-gray-400 mt-6 text-lg max-w-2xl mx-auto">Kampala Video Editor | 100+ Edits | Fast 24hr Delivery</p>
-        <div class="mt-8 flex gap-4 justify-center flex-wrap">
-            <a href="https://wa.me/256791952799?text=Hi%20Phillips,%20I%20want%20to%20hire%20you%20for%20video%20editing" class="bg-white text-black px-8 py-4 rounded-full font-bold">WhatsApp 0791952799</a>
-            <a href="#shop" class="border border-white px-8 py-4 rounded-full font-bold">Buy Presets 20k UGX</a>
+        <p class="text-gray-400 mt-4">Tap any video - becomes BIG fullscreen</p>
+        <div class="mt-6 flex gap-4 justify-center">
+            <a href="https://wa.me/256791952799" class="bg-white text-black px-8 py-3 rounded-full font-bold">WhatsApp 0791952799</a>
         </div>
     </section>
-    <section class="max-w-6xl mx-auto px-6 py-12">
-        <h3 class="text-3xl font-bold mb-8">My Work - 5 Edits</h3>
+    <section class="max-w-6xl mx-auto px-6 py-8">
+        <h3 class="text-3xl font-bold mb-2">My Work (5 Videos) - Tap to Enlarge</h3>
+        <p class="text-sm text-gray-500 mb-8">👆 Tap = BIG video with sound</p>
         <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-            <div class="bg-zinc-900 rounded-2xl overflow-hidden"><iframe class="w-full aspect-[9/16]" src="https://www.youtube.com/embed/8hKGHRL9JmI" frameborder="0" allowfullscreen></iframe></div>
-            <div class="bg-zinc-900 rounded-2xl overflow-hidden"><iframe class="w-full aspect-[9/16]" src="https://www.youtube.com/embed/wSqQqj7ZXfE" frameborder="0" allowfullscreen></iframe></div>
-            <div class="bg-zinc-900 rounded-2xl aspect-[9/16] border border-dashed border-zinc-700 flex items-center justify-center p-4 text-center text-gray-500 text-sm">Video 3<br>Send link to add</div>
-            <div class="bg-zinc-900 rounded-2xl aspect-[9/16] border border-dashed border-zinc-700 flex items-center justify-center p-4 text-center text-gray-500 text-sm">Video 4<br>Send link to add</div>
-            <div class="bg-zinc-900 rounded-2xl aspect-[9/16] border border-dashed border-zinc-700 flex items-center justify-center p-4 text-center text-gray-500 text-sm">Video 5<br>Send link to add</div>
+            <div onclick="openVideo('8hKGHRL9JmI')" class="bg-zinc-900 rounded-2xl overflow-hidden cursor-pointer relative"><iframe class="w-full aspect-[9/16] pointer-events-none" src="https://www.youtube.com/embed/8hKGHRL9JmI?mute=1&controls=0"></iframe><div class="absolute bottom-2 left-2 bg-yellow-400 text-black px-2 py-1 rounded-full text-[10px] font-bold">TAP BIG</div></div>
+            <div onclick="openVideo('wSqQqj7ZXfE')" class="bg-zinc-900 rounded-2xl overflow-hidden cursor-pointer relative"><iframe class="w-full aspect-[9/16] pointer-events-none" src="https://www.youtube.com/embed/wSqQqj7ZXfE?mute=1&controls=0"></iframe><div class="absolute bottom-2 left-2 bg-yellow-400 text-black px-2 py-1 rounded-full text-[10px] font-bold">TAP BIG</div></div>
+            <div onclick="openVideo('LC1OPIUG8pk')" class="bg-zinc-900 rounded-2xl overflow-hidden cursor-pointer relative"><iframe class="w-full aspect-[9/16] pointer-events-none" src="https://www.youtube.com/embed/LC1OPIUG8pk?mute=1&controls=0"></iframe><div class="absolute bottom-2 left-2 bg-yellow-400 text-black px-2 py-1 rounded-full text-[10px] font-bold">TAP BIG</div></div>
+            <div onclick="openVideo('8QU3PBfCGR0')" class="bg-zinc-900 rounded-2xl overflow-hidden cursor-pointer relative"><iframe class="w-full aspect-[9/16] pointer-events-none" src="https://www.youtube.com/embed/8QU3PBfCGR0?mute=1&controls=0"></iframe><div class="absolute bottom-2 left-2 bg-yellow-400 text-black px-2 py-1 rounded-full text-[10px] font-bold">TAP BIG</div></div>
+            <div onclick="openVideo('1eONa8Nx_jQ')" class="bg-zinc-900 rounded-2xl overflow-hidden cursor-pointer relative"><iframe class="w-full aspect-[9/16] pointer-events-none" src="https://www.youtube.com/embed/1eONa8Nx_jQ?mute=1&controls=0"></iframe><div class="absolute bottom-2 left-2 bg-yellow-400 text-black px-2 py-1 rounded-full text-[10px] font-bold">TAP BIG</div></div>
+            <div class="bg-gradient-to-br from-yellow-400 to-orange-500 rounded-2xl aspect-[9/16] flex flex-col items-center justify-center p-6 text-center text-black"><p class="font-extrabold text-xl">Want this?</p><p class="text-sm mt-2">Hire me 50k UGX</p><a href="https://wa.me/256791952799" class="mt-4 bg-black text-white px-4 py-2 rounded-full font-bold text-sm">WhatsApp Now</a></div>
         </div>
     </section>
-    <section id="shop" class="max-w-6xl mx-auto px-6 py-12">
+    <div id="videoModal" class="modal fixed inset-0 bg-black/95 z-50 items-center justify-center p-4" onclick="closeVideo()">
+        <div class="relative w-full max-w-[380px]" onclick="event.stopPropagation()">
+            <button onclick="closeVideo()" class="absolute -top-12 right-0 bg-zinc-800 text-white px-4 py-2 rounded-full">✕ Close</button>
+            <iframe id="modalFrame" class="w-full aspect-[9/16] rounded-2xl" src="" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            <a href="https://wa.me/256791952799?text=I%20want%20this%20edit%20style%20-%2050k%20UGX" class="block mt-4 bg-yellow-400 text-black text-center py-4 rounded-full font-bold">Hire Me For This Style - 50k</a>
+        </div>
+    </div>
+    <section class="max-w-6xl mx-auto px-6 py-12">
         <div class="grid md:grid-cols-2 gap-6">
-            <div class="bg-zinc-900 rounded-2xl p-8 border border-yellow-400/50">
-                <h4 class="text-xl font-bold">1 Video Edit</h4>
-                <p class="text-4xl font-extrabold mt-4">50,000 UGX</p>
-                <a href="https://wa.me/256791952799?text=Hi%20I%20want%20to%20PAY%2050k%20for%201%20video%20edit%20via%20MoMo" class="block mt-6 bg-yellow-400 text-black text-center py-4 rounded-full font-bold">Pay 50k - MoMo 0791952799</a>
-            </div>
-            <div class="bg-zinc-900 rounded-2xl p-8">
-                <h4 class="text-xl font-bold">Preset Pack</h4>
-                <p class="text-4xl font-extrabold mt-4">20,000 UGX</p>
-                <a href="https://wa.me/256791952799?text=Hi%20I%20want%20to%20BUY%20Preset%20Pack%2020k" class="block mt-6 bg-white text-black text-center py-4 rounded-full font-bold">Buy 20k - MoMo</a>
-            </div>
+            <div class="bg-zinc-900 rounded-2xl p-8 border-2 border-yellow-400"><h4 class="text-xl font-bold">1 Video Edit</h4><p class="text-4xl font-extrabold mt-4">50,000 UGX</p><a href="https://wa.me/256791952799?text=PAY%2050k%20for%20edit%20MoMo" class="block mt-6 bg-yellow-400 text-black text-center py-4 rounded-full font-bold">Pay 50k - MoMo 0791952799</a></div>
+            <div class="bg-zinc-900 rounded-2xl p-8"><h4 class="text-xl font-bold">Preset Pack</h4><p class="text-4xl font-extrabold mt-4">20,000 UGX</p><a href="https://wa.me/256791952799?text=BUY%20Presets%2020k" class="block mt-6 bg-white text-black text-center py-4 rounded-full font-bold">Buy 20k</a></div>
         </div>
     </section>
-    <section class="text-center py-12 border-t border-zinc-800"><p class="text-gray-500">Phillips Sekyanzi | 0791952799 | Kampala</p></section>
+    <footer class="text-center py-10 border-t border-zinc-800 text-gray-500 text-sm">Phillips Sekyanzi | 0791952799 | Kampala | 5 Videos Live ✅</footer>
+    <script>
+        function openVideo(id){document.getElementById('modalFrame').src='https://www.youtube.com/embed/'+id+'?autoplay=1&rel=0';document.getElementById('videoModal').classList.add('active');document.body.style.overflow='hidden';}
+        function closeVideo(){document.getElementById('videoModal').classList.remove('active');document.getElementById('modalFrame').src='';document.body.style.overflow='auto';}
+    </script>
 </body>
-    </html>
+                                                                                                                                </html>
