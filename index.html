@@ -1,102 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Phillip | Frontend Developer</title>
-  <style>
-    * { margin:0; padding:0; box-sizing:border-box; font-family:Arial, sans-serif; }
-    body { background:#0f172a; color:#e2e8f0; line-height:1.6; }
-    header {
-      background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200');
-      background-size: cover; background-position: center;
-      padding: 40px 20px; text-align:center; position:sticky; top:0; z-index:10;
-    }
-    header h1 { color:#38bdf8; font-size:2.5rem; background:rgba(15,23,42,0.8); display:inline-block; padding:10px 20px; border-radius:10px; }
-    nav a { color:#e2e8f0; text-decoration:none; margin:0 15px; background:rgba(15,23,42,0.8); padding:5px 10px; border-radius:5px; }
-    section { padding:60px 20px; max-width:900px; margin:auto; }
-    .hero { text-align:center; }
-    .search-box { width:100%; padding:12px; border-radius:8px; border:2px solid #38bdf8; background:#1e293b; color:white; font-size:1rem; margin:20px 0; }
-    
-    /* VIDEO GALLERY - HIDDEN BY DEFAULT */
-    #videoGallery { display:none; margin-top:20px; }
-    #videoGallery.show { display:grid; }
-    .videos { display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:20px; }
-    .video-card { background:#1e293b; padding:10px; border-radius:10px; }
-    .video-card video, .video-card iframe { width:100%; border-radius:8px; height:180px; }
-
-    .btn { display:inline-block; background:#38bdf8; color:#0f172a; padding:10px 20px; border-radius:8px; text-decoration:none; margin-top:20px; font-weight:bold; border:none; cursor:pointer; }
-    footer { text-align:center; padding:20px; background:#1e293b; margin-top:40px; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phillip Kakuru | Designer - St Mary's High School UG</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0f172a;color:#e2e8f0;font-family:Arial,sans-serif}
+header{background:#1e293b;padding:25px;text-align:center;position:sticky;top:0;z-index:10;border-bottom:2px solid #38bdf8}
+header h1{color:#38bdf8;font-size:28px}
+.search-box{margin-top:20px;display:flex;justify-content:center;gap:8px;max-width:500px;margin:0 auto}
+.search-box input{flex:1;padding:13px;border-radius:8px;border:none;font-size:16px}
+.search-box button{padding:13px 25px;background:#38bdf8;color:#0f172a;border:none;border-radius:8px;font-weight:bold;cursor:pointer;font-size:16px}
+.hero{text-align:center;padding:50px 20px}
+.hero img{width:180px;height:180px;border-radius:50%;object-fit:cover;border:4px solid #38bdf8;margin:0 auto 20px auto;display:block}
+section{padding:30px 20px;max-width:900px;margin:auto}
+.card{background:#1e293b;padding:25px;border-radius:14px;margin:20px 0}
+.card h3{color:#38bdf8}
+iframe{width:100%;height:400px;border-radius:12px;border:none;margin-top:15px}
+.hidden{display:none !important}
+.btn{background:#38bdf8;color:#0f172a;padding:12px 25px;border-radius:8px;text-decoration:none;font-weight:bold;display:inline-block;margin-top:10px}
+footer{text-align:center;padding:30px;background:#1e293b;color:#94a3b8;margin-top:30px}
+</style>
 </head>
 <body>
 
 <header>
-  <h1>Phillip</h1>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<h1>Phillip Kakuru</h1>
+<p>Graphic Designer | St Mary's High School, Wakiso UG</p>
+<form class="search-box" onsubmit="return doSearch(event)">
+<input type="text" id="searchInput" placeholder="search phillips videos, designs..." required>
+<button type="submit">Search</button>
+</form>
 </header>
 
-<section class="hero">
-  <h2>Hi, I'm Phillip 👋</h2>
-  <p>Aspiring Frontend Developer from st marys high xcul UG</p>
-  
-  <!-- YOUR SEARCH BAR -->
-  <input type="text" id="searchInput" class="search-box" placeholder="search phillips videos">
-  <p>Email: phillipssekyanzi@gmail.com</p>
-  <p>Tell:0791952799</p>
-  <p>Location:wakiso</p>
-  <img src="pic1.jpg"alt="Ssekyanzi Phillip" width="150" style="border-radius:50%;">
-  <!-- VIDEO GALLERY THAT APPEARS WHEN YOU TYPE "VIDEOS" -->
-  <div id="videoGallery">
-    <h2>My Videos 🎥</h2>
-    <div class="videos">
-      <div class="video-card">
-        <video controls src="your-video-1.mp4"></video>
-        <p>My First Website Build</p>
-      </div>
-      <div class="video-card">
-        <video controls src="video2.mp4"></video>
-                <video controls src="video1.mp4"></video>
-        <p>CSS Bouncing Ball Tutorial</p>
-      </div>
-      <div class="video-card">
-        <!-- You can also use YouTube -->
-        <iframe src="https://youtu.be/62bIsvRcPv0?si=NdC8c9hpIUU2R5YQ"" frameborder="0" allowfullscreen></iframe>
-        <p>YouTube Project</p>
-      </div>
-    </div>
-  </div>
+<div class="hero">
+<img src="profile.jpg" alt="Phillip">
+<h2>Hello, I'm Phillip!</h2>
+<p>Designer from Kampala, Uganda</p>
+</div>
+
+<section class="search-item">
+<div class="card">
+<h3>About Me</h3>
+<p>Student at St Mary's High School UG, passionate about design and video creation.</p>
+</div>
 </section>
 
-<section id="about">
-  <h2>About Me</h2>
-  <p>I'm learning frontend development and I love creating cool websites.</p>
+<section class="search-item" id="videos">
+<h2 style="color:#38bdf8;text-align:center">My Videos</h2>
+<div class="card">
+<h3>My Work</h3>
+<iframe src="https://www.youtube.com/embed/IZrtrJkbv2Y" allowfullscreen></iframe>
+</div>
 </section>
 
-<footer>
-  <p>© 2026 The legendary Phillip</p>
-</footer>
+<section class="search-item" id="contact">
+<div class="card">
+<h3>Contact</h3>
+<p>Kampala, Uganda | GitHub: phillipspk7</p>
+<a class="btn" href="https://wa.me/256700000000">WhatsApp Me</a>
+</div>
+</section>
+
+<footer>&copy; 2026 Phillip Kakuru | St Mary's High School UG</footer>
 
 <script>
-  const searchInput = document.getElementById('searchInput');
-  const videoGallery = document.getElementById('videoGallery');
-
-  searchInput.addEventListener('input', function() {
-    let word = this.value.toLowerCase();
-    
-    // If user types "video" or "videos"
-    if (word.includes("video")) {
-      videoGallery.classList.add("show");
-      videoGallery.scrollIntoView({ behavior: 'smooth' });
-    } else {
-      videoGallery.classList.remove("show");
-    }
-  });
+function doSearch(e){
+e.preventDefault();
+let q=document.getElementById('searchInput').value.toLowerCase();
+let items=document.querySelectorAll('.search-item');
+let found=false;
+items.forEach(it=>{
+if(it.innerText.toLowerCase().includes(q)){it.classList.remove('hidden');found=true}
+else{it.classList.add('hidden')}
+});
+if(!found){alert('No results for: '+q);items.forEach(i=>i.classList.remove('hidden'))}
+return false;
+}
 </script>
-
 </body>
 </html>
