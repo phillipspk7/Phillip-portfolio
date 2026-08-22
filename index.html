@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phillip | Frontend Developer</title>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; font-family:Arial, sans-serif; }
+    body { background:#0f172a; color:#e2e8f0; line-height:1.6; }
+    header {
+      background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200');
+      background-size: cover; background-position: center;
+      padding: 40px 20px; text-align:center; position:sticky; top:0; z-index:10;
+    }
+    header h1 { color:#38bdf8; font-size:2.5rem; background:rgba(15,23,42,0.8); display:inline-block; padding:10px 20px; border-radius:10px; }
+    nav a { color:#e2e8f0; text-decoration:none; margin:0 15px; background:rgba(15,23,42,0.8); padding:5px 10px; border-radius:5px; }
+    section { padding:60px 20px; max-width:900px; margin:auto; }
+    .hero { text-align:center; }
+    .search-box { width:100%; padding:12px; border-radius:8px; border:2px solid #38bdf8; background:#1e293b; color:white; font-size:1rem; margin:20px 0; }
+    
+    /* VIDEO GALLERY - HIDDEN BY DEFAULT */
+    #videoGallery { display:none; margin-top:20px; }
+    #videoGallery.show { display:grid; }
+    .videos { display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:20px; }
+    .video-card { background:#1e293b; padding:10px; border-radius:10px; }
+    .video-card video, .video-card iframe { width:100%; border-radius:8px; height:180px; }
+
+    .btn { display:inline-block; background:#38bdf8; color:#0f172a; padding:10px 20px; border-radius:8px; text-decoration:none; margin-top:20px; font-weight:bold; border:none; cursor:pointer; }
+    footer { text-align:center; padding:20px; background:#1e293b; margin-top:40px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Phillip</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Hi, I'm Phillip 👋</h2>
+  <p>Aspiring Frontend Developer from st marys high xcul UG</p>
+  
+  <!-- YOUR SEARCH BAR -->
+  <input type="text" id="searchInput" class="search-box" placeholder="search phillips videos">
+  <p>Email: phillipssekyanzi@gmail.com</p>
+  <p>Tell:0791952799</p>
+  <p>Location:wakiso</p>
+  <img src="pic1.jpg"alt="Ssekyanzi Phillip" width="150" style="border-radius:50%;">
+  <!-- VIDEO GALLERY THAT APPEARS WHEN YOU TYPE "VIDEOS" -->
+  <div id="videoGallery">
+    <h2>My Videos 🎥</h2>
+    <div class="videos">
+      <div class="video-card">
+        <video controls src="your-video-1.mp4"></video>
+        <p>My First Website Build</p>
+      </div>
+      <div class="video-card">
+        <video controls src="video2.mp4"></video>
+                <video controls src="video1.mp4"></video>
+        <p>CSS Bouncing Ball Tutorial</p>
+      </div>
+      <div class="video-card">
+        <!-- You can also use YouTube -->
+        <iframe src="https://youtu.be/62bIsvRcPv0?si=NdC8c9hpIUU2R5YQ"" frameborder="0" allowfullscreen></iframe>
+        <p>YouTube Project</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>I'm learning frontend development and I love creating cool websites.</p>
+</section>
+
+<footer>
+  <p>© 2026 The legendary Phillip</p>
+</footer>
+
+<script>
+  const searchInput = document.getElementById('searchInput');
+  const videoGallery = document.getElementById('videoGallery');
+
+  searchInput.addEventListener('input', function() {
+    let word = this.value.toLowerCase();
+    
+    // If user types "video" or "videos"
+    if (word.includes("video")) {
+      videoGallery.classList.add("show");
+      videoGallery.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      videoGallery.classList.remove("show");
+    }
+  });
+</script>
+
+</body>
+</html>
