@@ -3,83 +3,54 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Phillip Ssekyanzi | Designer</title>
+<title>Phillip Ssekyanzi - Video Editor</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{background:#0f172a;color:#e2e8f0;font-family:Arial,sans-serif}
-header{background:#1e293b;padding:30px;text-align:center;position:sticky;top:0;border-bottom:2px solid #38bdf8}
-header h1{color:#38bdf8;font-size:32px}
-.search-box{margin:20px auto 0;max-width:500px;display:flex;gap:8px}
-.search-box input{flex:1;padding:14px;border-radius:8px;border:none}
-.search-box button{padding:14px 24px;background:#38bdf8;border:none;border-radius:8px;font-weight:bold;cursor:pointer}
-.hero{text-align:center;padding:60px 20px}
-.hero h2{font-size:36px;color:#38bdf8}
-section{padding:20px;max-width:900px;margin:auto}
-.card{background:#1e293b;padding:25px;border-radius:14px;margin:20px 0}
-.card h3{color:#38bdf8;margin-bottom:8px}
-iframe{width:100%;height:380px;border-radius:12px;border:none;margin-top:15px}
-.hidden{display:none !important}
-.btn{background:#38bdf8;color:#0f172a;padding:12px 25px;border-radius:8px;text-decoration:none;font-weight:bold;display:inline-block;margin-top:12px}
-footer{text-align:center;padding:25px;background:#1e293b;color:#94a3b8}
+body{font-family:'Poppins',sans-serif;background:#0f172a;color:white;line-height:1.6}
+.header{background:linear-gradient(135deg,#0f172a,#1e3a8a);padding:60px 20px;text-align:center}
+.header h1{font-size:48px;color:#38bdf8}
+.header p{font-size:20px;color:#94a3b8;margin-top:10px}
+.container{max-width:1000px;margin:auto;padding:20px}
+.video-section{background:#1e293b;padding:20px;border-radius:16px;margin-top:30px}
+.video-wrapper{position:relative;padding-bottom:177.77%;height:0;overflow:hidden;border-radius:12px;background:#000}
+.video-wrapper iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+.btn{display:inline-block;background:#38bdf8;color:#0f172a;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:600;margin-top:15px}
+h2{color:#38bdf8;margin:30px 0 15px 0}
 </style>
 </head>
 <body>
 
-<header>
-<h1>Phillip Ssekyanzi</h1>
-<p>Web developer | St Mary's High School, Wakiso UG</p>
-<form class="search-box" onsubmit="return doSearch(event)">
-<input type="text" id="searchInput" placeholder="search videos, designs..." required>
-<button type="submit">Search</button>
-</form>
-</header>
-
-<div class="hero">
-<h2>Hello, I'm Phillip Ssekyanzi!</h2>
-<p>A Web Designer from St Mary's High School, Kampala, Uganda</p>
-<a class="btn" href="#videos">View My Work</a>
+<div class="header">
+  <h1>Phillip Ssekyanzi</h1>
+  <p>Professional Video Editor | Shorts | Reels | TikTok</p>
+  <a href="https://youtube.com/shorts/wSqQqj7ZXfE?si=SjfNrDaomqv0siwi" target="_blank" class="btn">Subscribe on YouTube</a>
 </div>
 
-<section class="search-item">
-<div class="card">
-<h3>About Me</h3>
-<p>Student at St Mary's High School UG, passionate about design and video creation. I create modern websites and creative graphics.</p>
+<div class="container">
+  
+  <h2>🔥 Featured Short</h2>
+  <div class="video-section">
+    <div class="video-wrapper">
+      <iframe 
+        src="https://www.youtube.com/embed/wSqQqj7ZXfE"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+    </div>
+    <p style="text-align:center;margin-top:15px;color:#94a3b8;">
+      If video says "refused to connect" - make sure the YouTube video is set to <b style="color:white">Public</b> not Private
+    </p>
+  </div>
+
+  <h2>About Me</h2>
+  <p>I create high-retention Shorts, Reels and TikTok edits that hook viewers in the first 3 seconds. Based in Kampala, UG.</p>
+
+  <h2>Contact</h2>
+  <p>Email: phillipssekyanzi@gmail.com</p>
+  <p>YouTube: @SsekyanziPhillip</p>
+
 </div>
-</section>
 
-<section class="search-item" id="videos">
-<h2 style="color:#38bdf8;text-align:center">My Videos</h2>
-<div class="card">
-<h3>Featured Work</h3>
-<iframe src="https://www.youtube.com/embed/IZrtrJkbv2Y" allowfullscreen></iframe>
-  <iframe src="https://youtube.com/shorts/KMDt3viUEHY?si=qPznpv3xMU8SLL4K"></iframe>
-</div>
-</section>
-
-<section class="search-item" id="contact">
-<div class="card">
-<h3>Contact</h3>
-<p>Kampala, Uganda</p>
-<p>GitHub: phillipspk7</p>
-<a class="btn" href="https://wa.me/256700000000">WhatsApp Me</a>
-</div>
-</section>
-
-<footer>&copy; 2026 Phillip Ssekyanzi</footer>
-
-<script>
-function doSearch(e){
-e.preventDefault();
-let q=document.getElementById('searchInput').value.toLowerCase();
-let items=document.querySelectorAll('.search-item');
-let found=false;
-items.forEach(it=>{
-if(it.innerText.toLowerCase().includes(q)){it.classList.remove('hidden');found=true}
-else{it.classList.add('hidden')}
-});
-if(!found){alert('No results for: '+q);items.forEach(i=>i.classList.remove('hidden'))}
-return false;
-}
-</script>
 </body>
 </html>
